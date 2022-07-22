@@ -1,0 +1,164 @@
+// ============================
+// RESETS
+// ============================
+* {
+    box-sizing: border-box;
+}
+
+// ============================
+// STRUCTURE
+// ============================
+.conteudo {
+    position: relative;
+    margin-right: 60px;
+}
+body {
+    background-color: $background-z1;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: $text-main;
+    //responsividade dos textos
+    @media (min-width: $break-xl) {
+        font-size: 1.25rem;
+        // background-color: blue;
+    }
+    @media (max-width: $break-xl) {
+            font-size: 1.125rem;
+            // background-color: orange;
+    }
+    @media (max-width: $break-lg) {
+            font-size: 1.125rem;
+            // background-color: red;
+    }
+    @media (max-width: $break-md) {
+            font-size: 1rem;
+            // background-color: green;
+    }
+    @media (max-width: $break-sm) {
+            font-size: .9375rem;
+            // background-color: purple;
+    }
+    @media (max-width: $break-xs) {
+            font-size: .875rem;
+            // background-color: pink;
+    }
+}
+
+// ============================
+// TEXT
+// ============================
+
+// heading displays
+.heading-display {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $text-main;
+}
+.heading-display-max {
+    @extend .heading-display;
+    font-size: 4em;
+    line-height: 1;
+}
+.heading-display-lg {
+    @extend .heading-display;
+    font-size: 3em;
+    line-height: 1.1;
+}
+.heading-display-md {
+    @extend .heading-display;
+    font-size: 2.5em;
+    line-height: 1.1;
+}
+.heading-display-sm {
+    @extend .heading-display;
+    font-size: 2.25em;
+    line-height: 1.2;
+}
+.heading-display-min {
+    @extend .heading-display;
+    font-size: 2em;
+    line-height: 1.2;
+}
+
+// heading regular
+.heading-regular {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    color: $text-light;
+}
+.heading-regular-max {
+    @extend .heading-regular;
+    font-size: 2.25em;
+    line-height: 1;
+}
+.heading-regular-lg {
+    @extend .heading-regular;
+    font-size: 2em;
+    line-height: 1.1;
+}
+.heading-regular-md {
+    @extend .heading-regular;
+    font-size: 1.5em;
+    line-height: 1.2;
+}
+.heading-regular-sm {
+    @extend .heading-regular;
+    font-size: 1.25em;
+    line-height: 1.3;
+}
+.heading-regular-min {
+    @extend .heading-regular;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+// body text
+.body-text {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    color: $text-light;
+}
+.body-max {
+    @extend .body-text;
+    font-size: 1.3125em;
+    line-height: 1.3;
+}
+.body-lg {
+    @extend .body-text;
+    font-size: 1.125em;
+    line-height: 1.4;
+}
+.body-md {
+    @extend .body-text;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+
+// ============================
+// COMPONENTS
+// ============================
+.social-apps {
+    display: flex;
+    @media (max-width: $break-xl) {
+        flex-direction: column;
+    }
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        background-color: $brand-primary-light;
+        margin-right: 1rem;
+        margin-top: $spacing-sm;
+        text-decoration: none;
+        color: $brand-primary-contrast;
+        svg {
+            height: 20px;
+        }
+    }
+}
