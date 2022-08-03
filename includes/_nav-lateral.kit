@@ -1,0 +1,39 @@
+<nav class="nav-lateral">
+  <button class="bt-menu" title="Menu">
+    <span class="hamburguer">
+      <span class="bar bar-1"></span>
+      <span class="bar bar-2"></span>
+      <span class="bar bar-3"></span>
+    </span>
+  </button>
+  <ul>
+    <li> <a href="#intro">intro</a> </li>
+    <li> <a href="#solucoes">soluções</a> </li>
+    <li> <a href="#clientes">clientes</a> </li>
+    <li> <a href="#estrutura">estrutura</a> </li>
+    <li> <a href="#pilares">pilares</a> </li>
+    <li> <a href="#proposito">propósito</a> </li>
+  </ul>
+  <a href="contato.html" class="contato"><i class="fa-regular fa-paper-plane"></i></a>
+</nav>
+
+<div class="full-menu">
+	<nav id="menu" class="menu">
+		<ul>
+			<li class="heading-display-min"><a href="a-builders.html">A Builders</a></li>
+			<li class="heading-display-min"><a href="transformacao-digital.html">Transformação Digital</a></li>
+			<li class="heading-display-min"><a href="venture-studio.html">Venture Studio</a></li>
+			<li class="heading-display-min"><a href="cases.html">Cases</a></li>
+			<li class="heading-display-min"><a href="btrends.html">BTrends</a></li>
+			<li class="heading-display-min"><a href="seja-builder.html">Seja Builder</a></li>
+		</ul>
+	</nav>
+</div>
+
+<script type="text/javascript">
+  //Using Vanilla JS
+  document.querySelector(".hamburguer").addEventListener("click", function(){
+  document.querySelector(".full-menu").classList.toggle("active");
+  document.querySelector(".hamburguer").classList.toggle("close-hamburguer");
+  });
+</script>

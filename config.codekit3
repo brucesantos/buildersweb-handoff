@@ -17,6 +17,32 @@
       "oAP" : "\/.gitattributes",
       "oF" : 0
     },
+    "\/a-builders.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/a-builders.html",
+      "oF" : 0
+    },
+    "\/a-builders.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/a-builders.html",
+      "oF" : 0
+    },
+    "\/assets\/bg-pattern.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/bg-pattern.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/assets\/builders-logo.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -26,6 +52,187 @@
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
+    },
+    "\/assets\/capa\/clientes\/alelo.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/capa\/clientes\/alelo.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/assets\/capa\/clientes\/athena.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/capa\/clientes\/athena.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/assets\/capa\/clientes\/carrefour.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/capa\/clientes\/carrefour.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/assets\/capa\/clientes\/credictrus.png" : {
+      "ft" : 32768,
+      "iS" : 18076,
+      "oA" : 0,
+      "oAP" : "\/assets\/capa\/clientes\/credictrus.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/assets\/capa\/clientes\/dpaschoal.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/capa\/clientes\/dpaschoal.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/assets\/capa\/clientes\/duratex.png" : {
+      "ft" : 32768,
+      "iS" : 10064,
+      "oA" : 0,
+      "oAP" : "\/assets\/capa\/clientes\/duratex.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/assets\/capa\/clientes\/iguatemi.png" : {
+      "ft" : 32768,
+      "iS" : 6692,
+      "oA" : 0,
+      "oAP" : "\/assets\/capa\/clientes\/iguatemi.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/assets\/capa\/clientes\/marfrig.png" : {
+      "ft" : 32768,
+      "iS" : 9794,
+      "oA" : 0,
+      "oAP" : "\/assets\/capa\/clientes\/marfrig.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/assets\/capa\/clientes\/p&g.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/capa\/clientes\/p&g.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/assets\/capa\/clientes\/sbt.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/capa\/clientes\/sbt.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/assets\/capa\/clientes\/vivo.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/capa\/clientes\/vivo.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/assets\/capa\/clientes\/voltz.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/capa\/clientes\/voltz.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/assets\/capa\/pilares.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/assets\/capa\/pilares.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/assets\/capa\/programas.jpg" : {
+      "ft" : 16384,
+      "iS" : 186810,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/capa\/programas.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/assets\/capa\/proposito.png" : {
+      "ft" : 32768,
+      "iS" : 146221,
+      "oA" : 0,
+      "oAP" : "\/assets\/capa\/proposito.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/assets\/capa\/venture.jpg" : {
+      "ft" : 16384,
+      "iS" : 96703,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/assets\/capa\/venture.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
     },
     "\/assets\/celular-capa.png" : {
       "ft" : 32768,
@@ -98,6 +305,30 @@
       "oAP" : "\/assets\/video-capa\/video-capa.webm",
       "oF" : 0
     },
+    "\/cases.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/cases.html",
+      "oF" : 0
+    },
+    "\/includes\/_footer.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/includes\/_footer.html",
+      "oF" : 0
+    },
+    "\/includes\/_nav-lateral.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/includes\/_nav-lateral.html",
+      "oF" : 0
+    },
     "\/index.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -129,9 +360,24 @@
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
-      "ma" : 0,
+      "ma" : 1,
       "oA" : 1,
       "oAP" : "\/styles\/_capa.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/styles\/_footer.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 1,
+      "oA" : 1,
+      "oAP" : "\/styles\/_footer.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -144,7 +390,7 @@
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
-      "ma" : 0,
+      "ma" : 1,
       "oA" : 1,
       "oAP" : "\/styles\/_general.css",
       "oF" : 0,
@@ -159,7 +405,7 @@
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
-      "ma" : 0,
+      "ma" : 1,
       "oA" : 1,
       "oAP" : "\/styles\/_nav-lateral.css",
       "oF" : 0,
@@ -174,7 +420,7 @@
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
-      "ma" : 0,
+      "ma" : 1,
       "oA" : 1,
       "oAP" : "\/styles\/_variables.css",
       "oF" : 0,
@@ -194,6 +440,14 @@
       "oF" : 0,
       "pg" : 0
     },
+    "\/styles\/master.css.map" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/styles\/master.css.map",
+      "oF" : 0
+    },
     "\/styles\/master.scss" : {
       "aP" : 1,
       "bl" : 0,
@@ -201,7 +455,7 @@
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
-      "ma" : 0,
+      "ma" : 1,
       "oA" : 0,
       "oAP" : "\/styles\/master.css",
       "oF" : 0,
@@ -1665,7 +1919,7 @@
       "purgeCSSStyle" : 0,
       "shouldRunAutoprefixer" : 0,
       "shouldRunBless" : 0,
-      "sourceMapStyle" : 0
+      "sourceMapStyle" : 1
     },
     "languageDefaultsSLIM" : {
       "autoOutputAction" : 0,

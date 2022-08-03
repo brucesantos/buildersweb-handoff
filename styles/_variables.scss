@@ -17,6 +17,12 @@ $text-light: rgba($text-main, 0.6);
 $text-contrast: #fff;
 
 // ========================
+// FONTS
+// ========================
+$font-title: 'Montserrat', sans-serif;
+$font-text: 'Source Sans Pro', sans-serif;
+
+// ========================
 // SPACING
 // ========================
 $spacing-sm: .5rem;
@@ -29,3 +35,14 @@ $break-lg: 1200px;
 $break-md: 992px;
 $break-sm: 768px;
 $break-xs: 576px;
+
+// ========================
+// NAV LATERAL
+// ========================
+$nav-width-desktop: 60px;
+$nav-width-mobile: 40px;
+
+// ========================
+// TRANSITIONS
+// ========================
+$transition-type: ease-in-out;

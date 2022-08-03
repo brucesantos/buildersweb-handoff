@@ -1,0 +1,112 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Builders</title>
+    <script src="https://kit.fontawesome.com/1d6b37e544.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="styles/master.css">
+</head>
+<body>
+
+    <nav class="nav-lateral">
+      <button class="bt-menu" title="Menu">
+        <span class="hamburguer">
+          <span class="bar bar-1"></span>
+          <span class="bar bar-2"></span>
+          <span class="bar bar-3"></span>
+        </span>
+      </button>
+      <ul>
+        <li> <a href="#intro">intro</a> </li>
+        <li> <a href="#solucoes">soluções</a> </li>
+        <li> <a href="#clientes">clientes</a> </li>
+        <li> <a href="#estrutura">estrutura</a> </li>
+        <li> <a href="#pilares">pilares</a> </li>
+        <li> <a href="#proposito">propósito</a> </li>
+      </ul>
+      <a href="contato.html" class="contato"><i class="fa-regular fa-paper-plane"></i></a>
+    </nav>
+    
+    <div class="full-menu">
+    	<nav id="menu" class="menu">
+    		<ul>
+    			<li class="heading-display-min"><a href="a-builders.html">A Builders</a></li>
+    			<li class="heading-display-min"><a href="transformacao-digital.html">Transformação Digital</a></li>
+    			<li class="heading-display-min"><a href="venture-studio.html">Venture Studio</a></li>
+    			<li class="heading-display-min"><a href="cases.html">Cases</a></li>
+    			<li class="heading-display-min"><a href="btrends.html">BTrends</a></li>
+    			<li class="heading-display-min"><a href="seja-builder.html">Seja Builder</a></li>
+    		</ul>
+    	</nav>
+    </div>
+    
+    <script type="text/javascript">
+      //Using Vanilla JS
+      document.querySelector(".hamburguer").addEventListener("click", function(){
+      document.querySelector(".full-menu").classList.toggle("active");
+      document.querySelector(".hamburguer").classList.toggle("close-hamburguer");
+      });
+    </script>
+    
+
+    <div id="intro" class="conteudo">
+      <div class="logo">
+          <img src="assets/builders-logo.svg" alt="logomarca da empresa builders">
+      </div>
+      <div class="capa">
+          <div class="intro">
+              <h1 class="heading-display-max">
+                Cultura Builders
+              </h1>
+              <div class="heading-regular-sm">
+                Colaboração, empoderamento e autonomia
+              </div>
+              <p class="body-max">
+                Um espaço para você gerar mudanças, se conectar com outras pessoas, aprender com os erros e absorver conhecimento
+              </p>
+              <a href="seja-builder.html" class="btn btn-regular">Oportunidades</a>
+          </div>
+          <div class="mendigo"></div>
+      </div>
+    </div>
+
+    <footer>
+      <img src="assets/builders-logo.svg" alt="logomarca da empresa builders">
+      <div class="links">
+        <ul class="site-map">
+          <li> <a href="#">a builders</a> </li>
+          <li> <a href="#">imprensa</a> </li>
+          <li> <a href="#">btrends</a> </li>
+          <li> <a href="#">seja builder</a> </li>
+          <li> <a href="#" class="contato">contato <i class="fa-regular fa-paper-plane"></i></a> </li>
+        </ul>
+        <div class="social-apps">
+            <a href="">
+                <i class="fab fa-medium"></i>
+            </a>
+            <a href="">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a href="">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+      </div>
+      <div class="politica">
+        2022 @ Platform Builders IT Solutions - Todos os direitos reservados • Conheça os nossos <a href="https://docs.google.com/document/d/1vncOXZSc9nLGw0AmlqFX5cN0j0u4Mmmq5B-hMXnOzmE/edit">termos de uso e política de privacidade</a>  •  Saiba mais sobre o nosso <a href="https://storage.googleapis.com/builders-public-document/etica/codigo_de_conduta_versao_2022.pdf">código de conduta</a>.
+      </div>
+    </footer>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</body>
+</html>

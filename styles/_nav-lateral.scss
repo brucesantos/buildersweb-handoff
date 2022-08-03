@@ -1,13 +1,178 @@
 .nav-lateral {
-    background-color: $text-main;
-    color: $text-contrast;
-    width: 60px;
-    position: fixed;
-    z-index: 1;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    @media (max-width: $break-sm) {
-        width: 40px;
+  display: flex;
+  justify-content: space-between;
+  background-color: $text-main;
+  color: $text-light;
+  width: $nav-width-mobile;
+  @media (min-width: $break-md) {
+    width: $nav-width-desktop;
+  }
+  position: fixed;
+  z-index: 3;
+  right: 0;
+  height: 100vh;
+  writing-mode:tb;
+  writing-mode: tb-rl;
+  /*IE*/
+  writing-mode: vertical-lr;
+  /* OPera/webkit*/
+  writing-mode: sideways-lr;
+  /*should be it */
+  ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-bottom: auto;
+    li {
+      width: 100%;
+      a {
+        font-family: $font-text;
+        color: $text-contrast;
+        text-decoration: none;
+        font-size: .7rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        opacity: .7;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 1.5em 0;
+        transition: all .2s ease-in-out;
+        &:hover, &.active {
+          color: $brand-primary-main;
+          opacity: 1;
+        }
+      }
     }
+  }
+
+  .contato {
+    margin: 0 auto 1em auto;
+    color: white;
+  }
+
+  $hamburger-button-size     : 40px;
+  $hamburger-button-radius   : 4px;
+  $hamburger-bar-color       : $background-z1;
+  $hamgurger-bar-width       : 20px;
+  $hamgurger-bar-height      : 2px;
+  $hamgurger-bar-spacing     : 4px;
+  $hamgurger-transition-speed: 0.4s;
+
+  .bt-menu {
+    position: relative;
+    margin: 0 auto;
+    border: none;
+    padding: 0;
+    background: none;
+    cursor: pointer;
+    width: $hamburger-button-size;
+    height: $hamburger-button-size;
+    transition: calc($hamgurger-transition-speed / 2);
+
+    &:hover, &:focus {
+      box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+    }
+
+    &:active {
+      transform: scale(0.9);
+    }
+
+    &:active, &:focus {
+      outline: none;
+    }
+
+    .hamburguer {
+      width: $hamgurger-bar-width;
+      // height: ($hamgurger-bar-height * 3) + ($hamgurger-bar-spacing * 2);
+      transition: $hamgurger-transition-speed;
+
+      &, .bar {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+      }
+
+      .bar {
+        width: $hamgurger-bar-width;
+        height: $hamgurger-bar-height;
+        background: $hamburger-bar-color;
+        transition: calc($hamgurger-transition-speed / 2);
+        outline: 1px solid transparent;
+        border-radius: $hamburger-button-radius;
+      }
+
+      .bar-1 {
+        transform: rotate(0) translate3d(0, -($hamgurger-bar-height * 2), 0);
+      }
+
+      .bar-3 {
+        transform: rotate(0) translate3d(0, ($hamgurger-bar-height * 2), 0);
+      }
+
+      .menu-open & {
+        transform: rotate(180deg);
+
+        .bar-1 { transform: rotate(45deg) translate3d(0, 0, 0); }
+        .bar-2 { opacity: 0; }
+        .bar-3 { transform: rotate(-45deg) translate3d(0, 0, 0); }
+      }
+    }
+  }
+
+}
+
+.full-menu {
+  width: calc(100% - $nav-width-mobile);
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  position: fixed;
+	background-color: $text-main;
+	opacity: 0.5;
+	transform: translateX(100%);
+	transition: all 400ms $transition-type;
+  z-index: 2;
+	ul {
+    list-style: none;
+  	li {
+      font-family: $font-title;
+      text-transform: uppercase;
+  		opacity: 0;
+  		transform: translateY(2%);
+  		transition: all .1s $transition-type;
+      margin-bottom: 1em;
+  		cursor: pointer;
+      a {
+        transition: background-size 350ms, color 700ms;
+        background: linear-gradient(0deg, $brand-primary-main, $brand-primary-main) no-repeat left bottom / 0 100%;
+        padding: 0 .3em;
+        color: $text-contrast;
+        white-space: normal;
+        &:where(:hover, :focus-visible) {
+          background-size: 100% 100%;
+          background-position-x: left;
+          color: $text-main;
+        }
+      }
+  	}
+  }
+	&.active {
+		transform: translateX(0%);
+		opacity: 1;
+		li {
+			opacity: 1;
+			transform: translateX(0%);
+      @for $i from 1 through 10 {
+        &:nth-child(#{$i}n) {
+          transition-delay: #{$i * .15}s;
+        }
+      }
+		}
+	}
 }

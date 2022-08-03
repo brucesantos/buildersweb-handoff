@@ -1,65 +1,81 @@
 .logo {
     margin-bottom: -1em;
     img {
-        height: 6em;
+      height: 5em;
     }
 }
 .capa {
     display: flex;
     position: relative;
-    margin: 1.5em;
     @media (max-width: $break-md) {
-        flex-direction: column;
+      flex-direction: column;
     }
     .intro {
         width: 60%;
-        margin-top: 2rem;
+        padding: 2rem 1.5em;
         &>* {
-            margin-bottom: $spacing-sm;
+          margin-bottom: $spacing-sm;
         }
         @media (max-width: $break-xl) {
-            margin-top: 1em;
-            .social-apps {
-                position: absolute;
-            }
-            width: 80%;
+          margin-top: 1em;
+          .social-apps {
+              position: absolute;
+          }
+          width: 80%;
         }
         @media (max-width: $break-md) {
-            margin-top: 0;
-            width: 100%;
-        }
-        @media (max-width: $break-sm) {
-            .heading-display-max {
-                font-size: 3.4em;
-            }
-        }
-        @media (max-width: $break-xs) {
-            .heading-display-max {
-                font-size: 2.1em;
-            }
+          margin-top: 0;
+          width: 100%;
         }
     }
     .celular {
         margin: 3em 3em auto auto;
         z-index: 1;
         position: relative;
-        @media (max-width: $break-xl) {
-            margin: 3em 0 auto auto;
+        margin: 0 2.8em;
+        text-align: left;
+        @media (min-width: $break-xs) {
+          text-align: right;
+        }
+        @media (min-width: $break-md) {
+          margin: 3.5em;
+        }
+        img {
+          width: 320px;
+          @media (min-width: $break-xs) {
+            width: 375px;
+          }
         }
         video {
-            position: absolute;
+          position: absolute;
+          width: 169px;
+          left: -25px;
+          top: -4px;
+          border-radius: 30px;
+          transform:
+          perspective(360px)
+          rotateX(4deg)
+          rotateY(-3deg)
+          rotateZ(7.9deg)
+          translate(59px, -28px)
+          scaleX(0.80)
+          scaleY(0.86)
+          skew(-11.5deg);
+          @media (min-width: $break-xs) {
+            width: 200px;
+            right: 196px;
+            left: auto;
+            top: -10px;
+          }
+          @media (min-width: $break-md) {
+            right: 194px;
+            top: -10px;
+          }
+          @media (min-width: $break-lg) {
+            right: auto;
             left: -20px;
             top: -10px;
-            border-radius: 30px;
-            transform: 
-            perspective(360px) 
-            rotateX(4deg) 
-            rotateY(-3deg) 
-            rotateZ(7.9deg) 
-            translate(59px, -28px) 
-            scaleX(0.80) 
-            scaleY(0.86) 
-            skew(-11.5deg);
+          }
         }
     }
     .mendigo {
@@ -82,7 +98,7 @@
         opacity: 1;
         filter: blur(3px);
     }
-    
+
 }
 
 .numeros {
@@ -107,12 +123,6 @@
     .detalhes {
         color: $text-light;
         margin-top: .3em;
-        a {
-            color: $text-main;
-            background-color: $brand-primary-light;
-            padding: .1em .5em .2em;
-            text-decoration: none;
-        }
     }
     .valor {
         @extend .heading-display-lg;
@@ -124,4 +134,202 @@
         margin: -.5em 0 0 1.5em;
         color: $text-main;
     }
+}
+
+#solucoes {
+  background: url("../assets/bg-pattern.svg") no-repeat;
+  background-position: 10% 2em;
+  padding-top: 6em;
+  h2 {
+    text-align: center;
+  }
+  .solucoes {
+    display: flex;
+    align-items: stretch;
+    min-height: 600px;
+    flex-direction: column;
+    @media (min-width: $break-md) {
+      flex-direction: row;
+    }
+    h3 {
+      margin-top: auto;
+      margin-bottom: 0;
+    }
+    .btn {
+      margin-left: auto;
+    }
+    .programas {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      padding: 1.8em;
+      background-image: url("../assets/capa/programas.jpg"); /* fallback */
+      background-image: linear-gradient(rgba($brand-primary-contrast, .2), $brand-primary-contrast), url("../assets/capa/programas.jpg"); /* W3C */
+      background-size: cover;
+      h3, p {
+        color: $text-contrast;
+      }
+    }
+    .venture {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      padding: 1.8em;
+      color: $text-main;
+      background-image: url("../assets/capa/venture.jpg"); /* fallback */
+      background-image: linear-gradient(rgba(#FFFFFF, 0), #FFFFFF), url("../assets/capa/venture.jpg"); /* W3C */
+      background-size: cover;
+    }
+  }
+}
+
+#clientes {
+  padding-left: 2em;
+  padding-right: 2em;
+  .titulo {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    .btn {
+      margin-left: auto;
+    }
+  }
+  .marcas {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    @media (min-width: $break-md) {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    a {
+      text-decoration: none;
+      text-align: center;
+      margin-bottom: 2em;
+    }
+    img {
+      width: 100px;
+      height: 100px;
+      @media (min-width: $break-md) {
+        width: 169px;
+        height: 169px;
+      }
+    }
+  }
+}
+
+#estrutura {
+  background: url("../assets/bg-pattern.svg") no-repeat;
+  background-position: 80% 0;
+  h2 {
+    margin-bottom: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  .tabs-content {
+    padding-left: 2em;
+    padding-right: 2em;
+    p {
+      margin-bottom: 3em;
+    }
+  }
+}
+
+#pilares {
+  background: #FFFFFF;
+  padding-top: 6em;
+  padding-left: 2em;
+  padding-right: 2em;
+  h2 {
+    text-align: center;
+    margin-bottom: 2em;
+  }
+  .conteudo {
+    max-width: 1000px;
+    min-height: 400px;
+    align-items: stretch;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    @media (min-width: $break-md) {
+      flex-direction: row;
+    }
+    .heading-regular-sm {
+      margin-bottom: 0;
+    }
+    .coluna {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      &:nth-child(1) {
+        order: 2;
+        @media (min-width: $break-md) {
+          order: 1;
+          width: 26%;
+        }
+      }
+      &:nth-child(2) {
+        order: 1;
+        @media (min-width: $break-md) {
+          order: 2;
+          width: 40%;
+        }
+      }
+      &:nth-child(3) {
+        order: 3;
+        @media (min-width: $break-md) {
+          width: 34%;
+        }
+      }
+      .bloco:nth-child(2) {
+        margin-top: auto;
+      }
+      img {
+        margin: auto;
+        width: 50%;
+        margin-bottom: 2em;
+        @media (min-width: $break-md) {
+          width: auto;
+          margin: 0 3em;
+        }
+      }
+    }
+  }
+}
+
+#proposito {
+  padding-bottom: 0;
+  padding-left: 2em;
+  padding-right: 2em;
+  .conteudo {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    @media (min-width: $break-md) {
+      flex-direction: row;
+    }
+    .coluna {
+      flex: 1;
+      &:nth-child(1) {
+        padding-bottom: 2em;
+      }
+      &:nth-child(2) {
+        margin-left: auto;
+        text-align: right;
+        @media (min-width: $break-sm) {
+          margin-left: auto;
+          text-align: right;
+        }
+      }
+      img {
+        margin-top: -100px;
+        width: 50%;
+        @media (min-width: $break-md) {
+          width: 100%;
+        }
+      }
+    }
+  }
 }
