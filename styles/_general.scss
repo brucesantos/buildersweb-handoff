@@ -10,22 +10,22 @@ p {
 // ============================
 // STRUCTURE
 // ============================
-body, html {
-  scroll-behavior: smooth;
-  overflow-x: hidden;
-}
-main {
+@mixin menu-margin {
   margin-right: $nav-width-mobile;
   @media (min-width: $break-md) {
     margin-right: $nav-width-desktop;
   }
 }
+body, html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+main {
+  @include menu-margin;
+}
 .conteudo {
     position: relative;
-    margin-right: $nav-width-mobile;
-    @media (min-width: $break-md) {
-      margin-right: $nav-width-desktop;
-    }
+    @include menu-margin;
 }
 body {
     background-color: $background-z1;
@@ -61,11 +61,7 @@ body {
 }
 section {
   padding-bottom: 6em;
-  margin-right: $nav-width-mobile;
-  @media (min-width: $break-md) {
-    margin-right: $nav-width-desktop;
-  }
-
+  @include menu-margin;
 }
 
 // ============================
@@ -106,10 +102,10 @@ section {
 }
 .heading-display-min {
     @extend .heading-display;
-    font-size: 1.4em;
+    font-size: 1em;
     line-height: 1.2;
-    @media (min-width: $break-xs) {font-size: 1.8em }
-    @media (min-width: $break-sm) {font-size: 2.2em   }
+    @media (min-width: $break-xs) {font-size: 1.4em }
+    @media (min-width: $break-sm) {font-size: 1.8em   }
 }
 
 // heading regular
@@ -228,14 +224,12 @@ a {
           display: inline-block;
           padding: .1em .4em;
           opacity: .6;
-          transition: background-size 350ms, color 700ms, opacity 300ms;
-          background: linear-gradient(0deg, $brand-primary-main, $brand-primary-main) no-repeat left bottom / 0 100%;
           white-space: normal;
-          &:hover {
+          box-shadow: inset 0 0 0 0 $brand-primary-main;
+          transition: background 350ms ease-in-out, box-shadow 350ms ease-in-out, opacity 350ms;
+          &:where(:hover, :focus-visible) {
+            box-shadow: inset 600px 0 1px 0 $brand-primary-main;
             opacity: 1;
-            background-size: 100% 100%;
-            background-position-x: left;
-            color: $text-main;
           }
           &.active {
             background: $brand-primary-main;
@@ -283,15 +277,14 @@ a {
   color: $text-main;
   text-transform: uppercase;
   background: $brand-primary-main;
-  box-shadow: inset 0 0 0 0 $text-main;
   text-decoration: none;
   letter-spacing: 1px;
   display: inline-block;
+  box-shadow: inset 0 0 0 0 $text-main;
   transition: color 700ms ease-in-out, background 350ms ease-in-out, box-shadow 350ms ease-in-out;
   &:where(:hover, :focus-visible) {
-    box-shadow: inset 400px 0 0 0 $text-main;
+    box-shadow: inset 400px 0 1px 0 $text-main;
     color: $brand-primary-main;
-    background: transparent;
   }
   svg {
     display: inline-block;

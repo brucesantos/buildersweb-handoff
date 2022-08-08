@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Source+Sans+Pro:wght@400;700&display=swap');
 @import "variables";
 @import "general";
+
+// INCLUDES
 @import "nav-lateral";
-@import "capa";
 @import "footer";
+
+// PAGINAS
+@import "capa";
+@import "transformacao-digital"

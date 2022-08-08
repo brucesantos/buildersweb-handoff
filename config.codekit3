@@ -305,12 +305,36 @@
       "oAP" : "\/assets\/video-capa\/video-capa.webm",
       "oF" : 0
     },
+    "\/cases.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/cases.html",
+      "oF" : 0
+    },
     "\/cases.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/cases.html",
+      "oF" : 0
+    },
+    "\/contato.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/contato.html",
+      "oF" : 0
+    },
+    "\/contato.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/contato.html",
       "oF" : 0
     },
     "\/includes\/_footer.kit" : {
@@ -327,6 +351,14 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/includes\/_nav-lateral.html",
+      "oF" : 0
+    },
+    "\/includes\/_pilares.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/includes\/_pilares.html",
       "oF" : 0
     },
     "\/index.html" : {
@@ -351,6 +383,22 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/index2.html",
+      "oF" : 0
+    },
+    "\/seja-builder.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/seja-builder.html",
+      "oF" : 0
+    },
+    "\/seja-builder.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/seja-builder.html",
       "oF" : 0
     },
     "\/styles\/_capa.scss" : {
@@ -413,6 +461,21 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/styles\/_transformacao-digital.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 1,
+      "oA" : 1,
+      "oAP" : "\/styles\/_transformacao-digital.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/styles\/_variables.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -462,6 +525,22 @@
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
+    },
+    "\/transformacao-digital.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/transformacao-digital.html",
+      "oF" : 0
+    },
+    "\/transformacao-digital.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/transformacao-digital.html",
+      "oF" : 0
     }
   },
   "hooks" : [
