@@ -626,6 +626,11 @@ footer .politica a {
   height: 5em;
 }
 
+.capa, .numeros, section {
+  max-width: 1600px;
+  margin: auto;
+}
+
 .capa {
   display: flex;
   position: relative;
@@ -717,7 +722,6 @@ footer .politica a {
   height: 418px;
   width: 75%;
   right: 0;
-  background: url("../assets/hero-bg.jpg");
   background-size: cover;
   background-position: center;
   z-index: -1;
@@ -777,11 +781,6 @@ footer .politica a {
   color: #101416;
 }
 
-#solucoes {
-  background: url("../assets/bg-pattern.svg") no-repeat;
-  background-position: 10% 2em;
-  padding-top: 6em;
-}
 #solucoes h2 {
   text-align: center;
 }
@@ -808,14 +807,24 @@ footer .politica a {
   display: flex;
   flex-direction: column;
   padding: 1.8em;
+  position: relative;
+}
+#solucoes .solucoes .programas .background {
   background-image: url("../assets/capa/programas.jpg");
   /* fallback */
   background-image: linear-gradient(rgba(13, 10, 0, 0.2), #0D0A00), url("../assets/capa/programas.jpg");
   /* W3C */
   background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
 }
 #solucoes .solucoes .programas h3, #solucoes .solucoes .programas p {
   color: #fff;
+  z-index: 1;
 }
 #solucoes .solucoes .venture {
   flex: 1;
@@ -869,9 +878,8 @@ footer .politica a {
   }
 }
 
-#estrutura {
-  background: url("../assets/bg-pattern.svg") no-repeat;
-  background-position: 80% 0;
+#estrutura .detalhesBg {
+  margin-left: 80%;
 }
 #estrutura h2 {
   margin-bottom: 2em;
