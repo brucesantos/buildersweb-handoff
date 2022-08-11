@@ -5,10 +5,6 @@
       height: 5em;
     }
 }
-.capa, .numeros, section {
-  max-width: 1600px;
-  margin: auto;
-}
 .capa {
     display: flex;
     position: relative;
@@ -145,52 +141,60 @@
   h2 {
     text-align: center;
   }
+  .detalhesBg {
+    
+  }
   .solucoes {
-    display: flex;
-    align-items: stretch;
-    min-height: 600px;
-    flex-direction: column;
-    @media (min-width: $break-md) {
-      flex-direction: row;
+    background: $brand-primary-contrast;
+    position: relative;
+    .background {
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      width: 50%;
+      height: 100%;
+      background-color: #FFFFFF;
+      z-index: 0;
     }
-    h3 {
-      margin-top: auto;
-      margin-bottom: 0;
-    }
-    .btn {
-      margin-left: auto;
-    }
-    .programas {
-      flex: 1;
+    .container {
       display: flex;
+      align-items: stretch;
+      min-height: 600px;
       flex-direction: column;
-      padding: 1.8em;
-      position: relative;
-      .background {
-        background-image: url("../assets/capa/programas.jpg"); /* fallback */
-        background-image: linear-gradient(rgba($brand-primary-contrast, .2), $brand-primary-contrast), url("../assets/capa/programas.jpg"); /* W3C */
-        background-size: cover;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 0;
+      @media (min-width: $break-md) {
+        flex-direction: row;
       }
-      h3, p {
-        color: $text-contrast;
+      h3 {
+        margin-top: auto;
+        margin-bottom: 0;
+      }
+      .btn {
+        margin-left: auto;
+      }
+      .programas {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        padding: 1.8em;
+        background-image: url("../assets/capa/programas.jpg"); /* fallback */
+        background-image: linear-gradient(rgba($brand-primary-contrast, 0), $brand-primary-contrast), url("../assets/capa/programas.jpg"); /* W3C */
+        background-size: cover;
+        h3, p {
+          color: $text-contrast;
+          z-index: 1;
+        }
+      }
+      .venture {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        padding: 1.8em;
+        color: $text-main;
+        background-image: url("../assets/capa/venture.jpg"); /* fallback */
+        background-image: linear-gradient(rgba(#FFFFFF, 0), #FFFFFF), url("../assets/capa/venture.jpg"); /* W3C */
+        background-size: cover;
         z-index: 1;
       }
-    }
-    .venture {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      padding: 1.8em;
-      color: $text-main;
-      background-image: url("../assets/capa/venture.jpg"); /* fallback */
-      background-image: linear-gradient(rgba(#FFFFFF, 0), #FFFFFF), url("../assets/capa/venture.jpg"); /* W3C */
-      background-size: cover;
     }
   }
 }
@@ -314,8 +318,7 @@
   padding-bottom: 0;
   padding-left: 2em;
   padding-right: 2em;
-  .conteudo {
-    max-width: 1000px;
+  .container {
     margin: auto;
     display: flex;
     align-items: center;
