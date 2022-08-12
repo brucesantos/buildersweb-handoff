@@ -349,18 +349,14 @@ a {
   right: 0;
   height: 100vh;
   -webkit-writing-mode: tb;
-      -ms-writing-mode: tb;
           writing-mode: tb;
   -webkit-writing-mode: tb-rl;
-      -ms-writing-mode: tb-rl;
           writing-mode: tb-rl;
   /*IE*/
   -webkit-writing-mode: vertical-lr;
-      -ms-writing-mode: tb-lr;
           writing-mode: vertical-lr;
   /* OPera/webkit*/
   -webkit-writing-mode: sideways-lr;
-      -ms-writing-mode: sideways-lr;
           writing-mode: sideways-lr;
   /*should be it */
 }
@@ -547,10 +543,11 @@ a {
 }
 
 footer {
-  background-color: white;
+  background-color: #FFFFFF;
   background-image: url("../assets/bg-pattern.svg");
   background-repeat: no-repeat;
   background-position: 90% 10%;
+  position: relative;
   margin-right: 40px;
 }
 @media (min-width: 992px) {
@@ -781,21 +778,32 @@ footer .politica a {
   color: #101416;
 }
 
+#solucoes {
+  padding-top: 6em;
+}
 #solucoes h2 {
   text-align: center;
+}
+#solucoes .detalhesBg {
+  position: absolute;
 }
 #solucoes .solucoes {
   background: #0D0A00;
   position: relative;
 }
 #solucoes .solucoes .background {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  width: 50%;
-  height: 100%;
-  background-color: #FFFFFF;
-  z-index: 0;
+  display: none;
+}
+@media (min-width: 992px) {
+  #solucoes .solucoes .background {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 50%;
+    height: 100%;
+    background-color: #FFFFFF;
+    z-index: 0;
+  }
 }
 #solucoes .solucoes .container {
   display: flex;
@@ -819,12 +827,18 @@ footer .politica a {
   flex: 1;
   display: flex;
   flex-direction: column;
-  padding: 1.8em;
-  background-image: url("../assets/capa/programas.jpg");
-  /* fallback */
-  background-image: linear-gradient(rgba(13, 10, 0, 0), #0D0A00), url("../assets/capa/programas.jpg");
-  /* W3C */
-  background-size: cover;
+  position: relative;
+}
+#solucoes .solucoes .container .programas .bg {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  position: absolute;
+  background-image: url("../assets/capa/programas.jpg"); /* fallback */
+  background-image: linear-gradient(rgba(13, 10, 0, 0), #0D0A00), url("../assets/capa/programas.jpg"); /* W3C */
+  background-size: 120%;
+  background-position: top center;
+  width: 100%;
+  height: 100%;
 }
 #solucoes .solucoes .container .programas h3, #solucoes .solucoes .container .programas p {
   color: #fff;
@@ -836,11 +850,11 @@ footer .politica a {
   flex-direction: column;
   padding: 1.8em;
   color: #101416;
-  background-image: url("../assets/capa/venture.jpg");
-  /* fallback */
-  background-image: linear-gradient(rgba(255, 255, 255, 0), #FFFFFF), url("../assets/capa/venture.jpg");
-  /* W3C */
+  background-image: url("../assets/capa/venture.jpg"); /* fallback */
+  background-image: linear-gradient(rgba(255, 255, 255, 0), #FFFFFF), url("../assets/capa/venture.jpg"); /* W3C */
   background-size: cover;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   z-index: 1;
 }
 
@@ -883,8 +897,12 @@ footer .politica a {
   }
 }
 
+#estrutura .container {
+  position: relative;
+}
 #estrutura .detalhesBg {
-  margin-left: 80%;
+  right: 0;
+  position: absolute;
 }
 #estrutura h2 {
   margin-bottom: 2em;
@@ -1009,7 +1027,7 @@ footer .politica a {
 }
 @media (min-width: 992px) {
   #proposito .container .coluna img {
-    width: 100%;
+    width: 80%;
   }
 }
 
@@ -1071,43 +1089,33 @@ footer .politica a {
   .div1 {
     grid-area: 1/1/2/4;
   }
-
   .div2 {
     grid-area: 1/4/2/7;
   }
-
   .div3 {
     grid-area: 2/1/3/3;
   }
-
   .div4 {
     grid-area: 2/3/3/5;
   }
-
   .div5 {
     grid-area: 2/5/4/7;
   }
-
   .div6 {
     grid-area: 3/3/4/5;
   }
-
   .div7 {
     grid-area: 3/1/5/3;
   }
-
   .div8 {
     grid-area: 4/3/5/5;
   }
-
   .div9 {
     grid-area: 4/5/6/7;
   }
-
   .div10 {
     grid-area: 5/1/6/3;
   }
-
   .div11 {
     grid-area: 5/3/6/5;
   }

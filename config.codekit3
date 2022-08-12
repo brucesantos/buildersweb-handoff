@@ -7,7 +7,7 @@
       "uuidString" : "8DA5B602-EB62-4401-B42D-5FFBEE4FA2A7"
     }
   ],
-  "creatorBuild" : "34365",
+  "creatorBuild" : "34408",
   "files" : {
     "\/.gitattributes" : {
       "cB" : 0,
@@ -191,7 +191,7 @@
       "oA" : 0,
       "oAP" : "\/assets\/capa\/pilares.gif",
       "oF" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "rq" : 75
     },
@@ -1433,7 +1433,8 @@
         "optionString" : "'event', 'fdescribe'"
       },
       "no-restricted-imports" : {
-        "active" : 0
+        "active" : 0,
+        "optionString" : ""
       },
       "no-restricted-properties" : {
         "active" : 0,
@@ -2061,6 +2062,7 @@
       "createDeclarationFile" : 0,
       "jsxMode" : 0,
       "minifierStyle" : 0,
+      "moduleDetectionType" : 0,
       "moduleResolutionType" : 0,
       "moduleType" : 2,
       "removeComments" : 0,

@@ -4,8 +4,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A Builders</title>
-    <script src="https://kit.fontawesome.com/1d6b37e544.js?ckcachebust=681942685" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styles/master.css?ckcachebust=5A45F6F743870EB686D88A728A4C57C8">
+    <script src="https://kit.fontawesome.com/1d6b37e544.js?ckcachebust=682007893" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/master.css?ckcachebust=47343F6D30DF7F9FB4940B83B1F39385">
 </head>
 <body>
 
@@ -133,7 +133,7 @@
         <div class="background"></div>
         <div class="container">
           <div class="programas">
-            <div class="background"></div>
+            <div class="bg"></div>
             <h3 class="heading-display-min">Programas para transformação digital</h3>
             <p class="body-md">Desenvolvemos continuamente produtos ou até mesmo um ecossistema completo, a partir de uma visão contínua de transformação de curto, médio e longo prazo, construindo em conjunto o futuro</p>
             <a href="transformacao-digital.html" class="btn btn-regular">Saiba mais <i class="fa-solid fa-arrow-up-right"></i></a>
@@ -272,7 +272,7 @@
           <a href="a-builders.html" class="btn btn-regular">Nossa cultura <i class="fa-solid fa-arrow-up-right"></i></a>
         </div>
         <div class="coluna">
-          <img src="assets/capa/proposito.png" alt="">
+          <img src="assets/capa/proposito.png" class="proposito" alt="">
         </div>
       </div>
     </section>
@@ -311,10 +311,10 @@
     </footer>
     
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js?ckcachebust=681942685"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js?ckcachebust=681942685"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.js?ckcachebust=681942685"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js?ckcachebust=681942685"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js?ckcachebust=682007893"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js?ckcachebust=682007893"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.js?ckcachebust=682007893"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js?ckcachebust=682007893"></script>
 
     <script type="text/javascript">
 
@@ -322,7 +322,6 @@
 
         $('.tabs-content .content').hide();
         $('.tabs-content .content.active').show();
-
         $('.tabs li a').click(function(e){
           $('.tabs li a').removeClass("active");
           $(this).addClass("active");
@@ -331,14 +330,11 @@
           $('.tabs-content '+ tab).fadeIn('slow');
           e.preventDefault();
         });
-
         $('.bt-menu').on('click', function(e) {
           e.preventDefault();
           $('body').toggleClass('menu-open');
         });
-
       });
-
       $(function() {
 
         //=================================
@@ -346,7 +342,9 @@
         //=================================
         var controller = new ScrollMagic.Controller();
 
-        // Animacao celular
+        //=================================
+        // ANIMACAO CELULAR
+        //=================================
         var celular = new gsap.to('.celular', {
             y: -100,
             ease: Linear.easeNone
@@ -356,16 +354,33 @@
             triggerHook: 0.4,
             duration: 500,
         })
-        .setTween(celular) // binds o tween com a scene
-        .addIndicators() // debug pra remover depois
-        .addTo(controller); // assign the scene to the controller
+        .setTween(celular)
+        .addIndicators()
+        .addTo(controller);
 
-        // Animacao detalhes
+        //=================================
+        // ANIMACAO PROPOSITO
+        //=================================
+        var celular = new gsap.to('.proposito', {
+            y: 200,
+            ease: Linear.easeNone
+        });
+        var containerScene = new ScrollMagic.Scene({
+            triggerElement: '#proposito',
+            triggerHook: 0.4,
+            duration: 500,
+        })
+        .setTween(celular)
+        .addIndicators()
+        .addTo(controller);
+
+        //=================================
+        // ANIMACAO DETALHES
+        //=================================
         $("section").each(function() {
           var tl = new TimelineMax();
           var parent = $(this).find(".detalhesBg");
           tl.from(parent, { y: -100, ease: Linear.easeNone });
-
           var scene = new ScrollMagic.Scene({
             triggerElement: this,
             triggerHook: .4,
@@ -376,12 +391,13 @@
           .addTo(controller);
         });
 
-        // Animacao titulos
+        //=================================
+        // ANIMACAO TITULOS
+        //=================================
         $("section").each(function() {
           var tl = new TimelineMax();
           var parent = $(this).find("h2");
           tl.from(parent, { y: 100, autoAlpha:.4, ease:Back.easeIn });
-
           var scene = new ScrollMagic.Scene({
             triggerElement: this,
             triggerHook: 50,
@@ -392,11 +408,13 @@
           .addTo(controller);
         });
 
+        //=================================
+        // ANIMACAO MARCAS
+        //=================================
         $(".marcas a").each(function() {
           var tl1 = new TimelineMax();
           var parent = $(this);
           tl1.from(parent, { y: 100, opacity: 0, duration: 1, stagger: 40, ease: Power1.easeNone });
-
           var scene = new ScrollMagic.Scene({
             triggerElement: this,
             triggerHook: 1,

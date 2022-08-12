@@ -1,8 +1,10 @@
 footer {
-  background-color: white;
+  background-color: #FFFFFF;
   background-image: url("../assets/bg-pattern.svg");
   background-repeat: no-repeat;
   background-position: 90% 10%;
+  // position relative para footer ficar por cima da animação da section de cima
+  position: relative;
   @include menu-margin;
   img {
     margin-left: 1.6em;
