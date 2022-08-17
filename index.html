@@ -4,8 +4,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A Builders</title>
-    <script src="https://kit.fontawesome.com/1d6b37e544.js?ckcachebust=682395623" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styles/master.css?ckcachebust=1C2A0C02CDF1C02FD72485DFE2BCE555">
+    <script src="https://kit.fontawesome.com/1d6b37e544.js?ckcachebust=682396740" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/master.css?ckcachebust=1B4EFCF618E270263A39BAB304422F54">
 </head>
 <body>
 
@@ -308,42 +308,43 @@
     
 
     <!-- JQUERY -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js?ckcachebust=682395623" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js?ckcachebust=682396740" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- GSAP [animations] -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js?ckcachebust=682396740"></script>
 
     <!-- RELLAX [PARALLAX LIB] -->
-    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js?ckcachebust=682395623"></script>
+    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js?ckcachebust=682396740"></script>
 
     <!-- Lottie Files -->
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js?ckcachebust=682395623"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js?ckcachebust=682396740"></script>
 
     <script>
 
-      // Inicia o plugin do parallax
-      var rellax = new Rellax('.rellax');
+      $(document).ready(function() {
 
+        // Inicia o plugin do parallax
+        var rellax = new Rellax('.rellax');
 
-      // $.fn.isInViewport = function() {
-      //     var elementTop = $(this).offset().top;
-      //     var elementBottom = elementTop + $(this).outerHeight();
-      //     var viewportTop = $(window).scrollTop();
-      //     var viewportBottom = viewportTop + $(window).height();
-      //     return elementBottom > viewportTop && elementTop < viewportBottom;
-      // };
-      
-      // $(window).scroll(function () {
-      //   $('.parallaxible').each(function() {
-      //       if ($(this).isInViewport()) {
-      //         $(this).fadeIn();
-      //       } 
-      //       else {
-      //         $(this).fadeOut();
-      //       }
-      //   })
-      // });
-
-      
+        // Tabs do nosso ecossistema
+        $('.tabs-content .content').hide();
+        $('.tabs-content .content.active').show();
+        $('.tabs li a').click(function(e){
+          $('.tabs li a').removeClass("active");
+          $(this).addClass("active");
+          var tab = $(this).attr('href');
+          $('.tabs-content .content').hide();
+          $('.tabs-content '+ tab).fadeIn('slow');
+          e.preventDefault();
+        });
+        $('.bt-menu').on('click', function(e) {
+          e.preventDefault();
+          $('body').toggleClass('menu-open');
+        });
+      });
 
     </script>
 
+      
 </body>
 </html>
