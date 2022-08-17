@@ -20,9 +20,11 @@
   /*should be it */
   ul {
     display: flex;
+    justify-content: center;
     margin: 0;
     padding: 0;
-    margin-bottom: auto;
+    list-style: none;
+    height: 100%;
     li {
       width: 100%;
       a {
@@ -39,31 +41,40 @@
         padding: 1.5em 0;
         transition: all .2s ease-in-out;
         &:hover, &.active {
-          color: $brand-primary-main;
           opacity: 1;
         }
       }
     }
   }
 
-  .contato {
-    margin: 0 auto 1em auto;
-    color: white;
-  }
 
   $hamburger-button-size     : 40px;
   $hamburger-button-radius   : 4px;
   $hamburger-bar-color       : $background-z1;
-  $hamgurger-bar-width       : 20px;
+  $hamgurger-bar-width       : 16px;
   $hamgurger-bar-height      : 2px;
-  $hamgurger-bar-spacing     : 4px;
   $hamgurger-transition-speed: 0.4s;
+
+  .contato {
+    width: $hamburger-button-size;
+    height: $hamburger-button-size;
+    margin: 0;
+    @media (min-width: $break-md) {
+      margin: 10px;
+    }
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
   .bt-menu {
     position: relative;
-    margin: 0 auto;
+    margin: 0;
+    @media (min-width: $break-md) {
+      margin: 10px;
+    }
     border: none;
-    padding: 0;
     background: none;
     cursor: pointer;
     width: $hamburger-button-size;
@@ -84,7 +95,6 @@
 
     .hamburguer {
       width: $hamgurger-bar-width;
-      // height: ($hamgurger-bar-height * 3) + ($hamgurger-bar-spacing * 2);
       transition: $hamgurger-transition-speed;
 
       &, .bar {
@@ -102,7 +112,6 @@
         height: $hamgurger-bar-height;
         background: $hamburger-bar-color;
         transition: calc($hamgurger-transition-speed / 2);
-        outline: 1px solid transparent;
         border-radius: $hamburger-button-radius;
       }
 

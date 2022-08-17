@@ -19,6 +19,7 @@ p {
 body, html {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  max-width: 100vw;
 }
 main {
   @include menu-margin;
@@ -176,11 +177,6 @@ a {
 // ============================
 .social-apps {
     display: flex;
-    flex-direction: column;
-    @media (min-width: $break-md) {
-        flex-direction: row;
-        align-items: center;
-    }
     a {
         display: flex;
         justify-content: center;
@@ -189,6 +185,7 @@ a {
         height: 40px;
         background-color: $brand-primary-light;
         margin-right: 1rem;
+        margin-bottom: .5rem;
         text-decoration: none;
         color: $brand-primary-contrast;
         svg {
@@ -284,11 +281,10 @@ a {
   text-decoration: none;
   letter-spacing: 1px;
   display: inline-block;
-  box-shadow: inset 0 0 0 0 $text-main;
-  transition: color 700ms ease-in-out, background 350ms ease-in-out, box-shadow 350ms ease-in-out;
+  box-shadow: inset 0 0 0 0 white;
+  transition: all 350ms ease-in-out;
   &:where(:hover, :focus-visible) {
-    box-shadow: inset 400px 0 1px 0 $text-main;
-    color: $brand-primary-main;
+    box-shadow: inset 400px 0 1px 0 white;
   }
   svg {
     display: inline-block;
@@ -298,5 +294,13 @@ a {
     padding: 0 1em;
     height: 40px;
     line-height: 40px;
+  }
+}
+
+.btn-icon {
+  box-shadow: inset 0 0 0 0 white;
+  transition: all 200ms ease-in-out;
+  &:hover {
+    box-shadow: inset 62px 0 1px 0 white;
   }
 }

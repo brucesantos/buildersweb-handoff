@@ -26,26 +26,26 @@
                   Exponencialize sua empresa, seus produtos e serviços com plataformas digitais para levar seu negócio para outro nível.
               </h2>
               <div class="social-apps rellax" data-rellax-speed="1">
-                  <a href="">
+                  <a class="btn-icon" href="">
                       <i class="fab fa-medium"></i>
                   </a>
-                  <a href="">
+                  <a class="btn-icon" href="">
                       <i class="fab fa-linkedin"></i>
                   </a>
-                  <a href="">
+                  <a class="btn-icon" href="">
                       <i class="fab fa-youtube"></i>
                   </a>
-                  <a href="">
+                  <a class="btn-icon" href="">
                       <i class="fab fa-facebook"></i>
                   </a>
-                  <a href="">
+                  <a class="btn-icon" href="">
                       <i class="fab fa-instagram"></i>
                   </a>
               </div>
             </div>
           </div>
-          <div class="mendigo">
-            <div class="box2 rellax" style="background: url('../assets/hero-bg.jpg')"></div>
+          <div class="mendigo rellax" data-rellax-speed="-3">
+            <div class="box2" style="background: url('../assets/hero-bg.jpg')"></div>
           </div>
           <div class="imagem-capa">
             <div class="celular rellax" data-rellax-speed="3">
@@ -87,24 +87,20 @@
 
     <section id="solucoes">
       <div class="container">
-        <img src="assets/bg-pattern.svg" alt="" width="" class="detalhesBg">
-        <h2 class="heading-display-md">Soluções</h2>
+        <!-- <img src="assets/bg-pattern.svg" alt="" width="" class="detalhesBg rellax" data-rellax-speed="0"> -->
+        <h2 class="heading-display-md rellax" data-rellax-speed=".75">Soluções</h2>
       </div>
-      <div class="solucoes">
-        <div class="background"></div>
-        <div class="container">
-          <div class="programas">
-            <div class="bg"></div>
+      <div class="solucoes rellax" data-rellax-speed="1">
+          <div class="solucao programas">
             <h3 class="heading-display-min">Programas para transformação digital</h3>
             <p class="body-md">Desenvolvemos continuamente produtos ou até mesmo um ecossistema completo, a partir de uma visão contínua de transformação de curto, médio e longo prazo, construindo em conjunto o futuro</p>
             <a href="transformacao-digital.html" class="btn btn-regular">Saiba mais <i class="fa-solid fa-arrow-up-right"></i></a>
           </div>
-          <div class="venture">
+          <div class="solucao venture">
             <h3 class="heading-display-min">Venture <br>Innovation & Studio</h3>
             <p class="body-md">Concebemos, operamos e escalamos startups de ponta a ponta em conjunto com grandes empresas. Operamos em modelo de experimentação contínua para diminuir riscos para o investidor</p>
-            <a href="venture-studio.html" class="btn btn-regular">Saiba mais <i class="fa-solid fa-arrow-up-right"></i></a>
+            <a href="venture-studio.html" class="btn btn-regular">Saiba mais <i class="fa-solid fa-arrow-up-right"></i></a>  
           </div>
-        </div>
       </div>
     </section>
 
@@ -204,10 +200,42 @@
 
     <!-- @import "includes/footer" -->
 
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- RELLAX [PARALLAX LIB] -->
     <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+
+    <!-- Lottie Files -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
     <script>
-      // Accepts any class name
+
+      // Inicia o plugin do parallax
       var rellax = new Rellax('.rellax');
+
+
+      // $.fn.isInViewport = function() {
+      //     var elementTop = $(this).offset().top;
+      //     var elementBottom = elementTop + $(this).outerHeight();
+      //     var viewportTop = $(window).scrollTop();
+      //     var viewportBottom = viewportTop + $(window).height();
+      //     return elementBottom > viewportTop && elementTop < viewportBottom;
+      // };
+      
+      // $(window).scroll(function () {
+      //   $('.parallaxible').each(function() {
+      //       if ($(this).isInViewport()) {
+      //         $(this).fadeIn();
+      //       } 
+      //       else {
+      //         $(this).fadeOut();
+      //       }
+      //   })
+      // });
+
+      
+
     </script>
 
 </body>
