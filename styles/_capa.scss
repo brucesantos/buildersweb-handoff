@@ -175,7 +175,7 @@
       background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1)), url(../assets/capa/programas.jpg);
       background-size: cover;      
       h3, p {
-        color: $text-contrast;
+        color: white;
       }
     }
     .venture {
@@ -189,6 +189,9 @@
       padding: 1.8em;
       background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,1)), url(../assets/capa/venture.jpg);
       background-size: cover;
+      h3, p {
+        color: black;
+      }
     }
   }
 }

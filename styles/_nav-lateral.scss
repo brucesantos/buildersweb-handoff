@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   background-color: $text-main;
-  color: $text-light;
+  color: $text-contrast;
   width: $nav-width-mobile;
   @media (min-width: $break-md) {
     width: $nav-width-desktop;
@@ -62,7 +62,7 @@
     @media (min-width: $break-md) {
       margin: 10px;
     }
-    color: white;
+    color: $text-contrast;
     display: flex;
     justify-content: center;
     align-items: center;

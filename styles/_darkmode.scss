@@ -1,0 +1,14 @@
+.marcas {
+    a {
+        img {
+            filter: invert(1);
+        }
+    }
+}
+.mendigo {
+    filter: invert(1) hue-rotate(190deg) blur(2px) !important;
+}
+
+.pattern-deco {
+    filter: invert(1);
+}

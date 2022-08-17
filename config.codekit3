@@ -440,6 +440,21 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/styles\/_darkmode.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 1,
+      "oA" : 1,
+      "oAP" : "\/styles\/_darkmode.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/styles\/_footer.scss" : {
       "aP" : 0,
       "bl" : 0,
