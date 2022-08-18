@@ -38,11 +38,11 @@ main {
 }
 
 body {
-  background-color: #252E34;
+  background-color: #DAE0E3;
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  color: #F8F9FA;
+  color: #101416;
 }
 @media (min-width: 1400px) {
   body {
@@ -90,7 +90,7 @@ section {
   font-weight: 900;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #F8F9FA;
+  color: #101416;
 }
 
 .heading-display-max {
@@ -151,7 +151,7 @@ section {
 .heading-regular, .heading-regular-min, .heading-regular-sm, .heading-regular-md, .heading-regular-lg, .numeros .nome, .heading-regular-max {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 700;
-  color: #F8F9FA;
+  color: #101416;
 }
 
 .heading-regular-max {
@@ -182,7 +182,7 @@ section {
 .body-text, .body-md, .body-lg, .body-max {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 300;
-  color: rgba(248, 249, 250, 0.6);
+  color: rgba(16, 20, 22, 0.6);
 }
 
 .body-max {
@@ -300,10 +300,10 @@ a {
 .badges ul li {
   white-space: nowrap;
   display: inline-block;
-  background: #455561;
+  background: #FFFFFF;
   font-family: "Source Sans Pro", sans-serif;
   text-transform: uppercase;
-  color: rgba(248, 249, 250, 0.6);
+  color: rgba(16, 20, 22, 0.6);
   height: 40px;
   line-height: 40px;
   padding: 0 1em;
@@ -346,8 +346,8 @@ a {
 .nav-lateral {
   display: flex;
   justify-content: space-between;
-  background-color: #F8F9FA;
-  color: #000;
+  background-color: #101416;
+  color: #fff;
   width: 40px;
   position: fixed;
   z-index: 3;
@@ -383,7 +383,7 @@ a {
 }
 .nav-lateral ul li a {
   font-family: "Source Sans Pro", sans-serif;
-  color: #000;
+  color: #fff;
   text-decoration: none;
   font-size: 0.7rem;
   text-transform: uppercase;
@@ -402,7 +402,7 @@ a {
   width: 40px;
   height: 40px;
   margin: 0;
-  color: #000;
+  color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -453,7 +453,7 @@ a {
 .nav-lateral .bt-menu .hamburguer .bar {
   width: 16px;
   height: 2px;
-  background: #252E34;
+  background: #DAE0E3;
   transition: 0.2s;
   border-radius: 4px;
 }
@@ -488,7 +488,7 @@ a {
   align-items: center;
   justify-content: center;
   position: fixed;
-  background-color: #F8F9FA;
+  background-color: #101416;
   opacity: 0.5;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
@@ -510,7 +510,7 @@ a {
 }
 .full-menu ul li a {
   padding: 0 0.3em;
-  color: #000;
+  color: #fff;
   white-space: normal;
   box-shadow: inset 0 0 0 0 #FFCF0D;
   transition: background 350ms ease-in-out, box-shadow 350ms ease-in-out, color 700ms;
@@ -518,7 +518,7 @@ a {
 .full-menu ul li a:where(:hover, :focus-visible) {
   box-shadow: inset 1000px 0 1px 0 #FFCF0D;
   opacity: 1;
-  color: #F8F9FA;
+  color: #101416;
 }
 .full-menu.active {
   -webkit-transform: translateX(0%);
@@ -562,7 +562,7 @@ a {
 }
 
 footer {
-  background-color: #455561;
+  background-color: #FFFFFF;
   background-image: url("../assets/bg-pattern.svg");
   background-repeat: no-repeat;
   background-position: 90% 10%;
@@ -613,34 +613,34 @@ footer .links .site-map li {
 }
 footer .links .site-map li a {
   font-family: "Source Sans Pro", sans-serif;
-  color: rgba(248, 249, 250, 0.6);
+  color: rgba(16, 20, 22, 0.6);
   text-transform: uppercase;
   font-size: 0.8rem;
   letter-spacing: 1px;
 }
 footer .links .site-map li a.contato {
-  border: 2px solid #F8F9FA;
-  color: #F8F9FA;
+  border: 2px solid #101416;
+  color: #101416;
   height: 40px;
   line-height: 36px;
   display: inline-block;
   padding: 0 1em;
 }
 footer .politica {
-  background: #101416;
+  background: #5A6F7F;
   font-size: 0.6rem;
   line-height: 1rem;
   text-align: center;
   padding: 1em 0;
-  color: #3A4852;
+  color: #F8F9FA;
 }
 footer .politica a {
-  color: #3A4852;
+  color: #F8F9FA;
   text-decoration: underline;
 }
 
 #pilares {
-  background: #455561;
+  background: #FFFFFF;
   padding-top: 6em;
   padding-left: 2em;
   padding-right: 2em;
@@ -875,16 +875,16 @@ footer .politica a {
   }
 }
 .numeros .detalhes {
-  color: rgba(248, 249, 250, 0.6);
+  color: rgba(16, 20, 22, 0.6);
   margin-top: 0.3em;
 }
 .numeros .valor {
-  color: #ADBBC5;
+  color: #71899B;
 }
 .numeros .nome {
   text-transform: uppercase;
   margin: -0.5em 0 0 1.5em;
-  color: #F8F9FA;
+  color: #101416;
 }
 
 #solucoes {
@@ -1085,7 +1085,7 @@ footer .politica a {
   }
 }
 .parent div {
-  background: #303B43;
+  background: #E9EDEF;
   text-align: center;
   padding: 2em;
   display: flex;
@@ -1147,20 +1147,6 @@ footer .politica a {
   .div11 {
     grid-area: 5/3/6/5;
   }
-}
-.marcas a img {
-  -webkit-filter: invert(1);
-          filter: invert(1);
-}
-
-.mendigo {
-  -webkit-filter: invert(1) hue-rotate(190deg) blur(2px) !important;
-          filter: invert(1) hue-rotate(190deg) blur(2px) !important;
-}
-
-.pattern-deco {
-  -webkit-filter: invert(1);
-          filter: invert(1);
 }
 
 /*# sourceMappingURL=master.css.map */
